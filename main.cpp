@@ -23,8 +23,6 @@ void drawTringle(int x, int y, int x1, int y1, int x2, int y2, float r, float g,
  glVertex2f(x1, y1);
  glVertex2f(x2, y2);
  glEnd();
-
-
 }
 void drawBOX(int x, int x1, int y, int y1, float r, float g, float b) {
  glBegin(GL_POLYGON);
@@ -88,46 +86,16 @@ void draw_object()
  glVertex2i(1180, 170);
  glVertex2i(1180, 290);
  glEnd();
- glColor3f(0.2, 0.2, 0.2);
- glPointSize(4.0);
- glBegin(GL_QUADS);
- glVertex2i(32, 158);
- glVertex2i(36, 158);
- glVertex2i(36, 240);
- glVertex2i(32, 240);
- glEnd();
-
-
- glColor3f(1.0f, 0.99f, 1.0f);
- glPointSize(4.0);
- glBegin(GL_QUADS);
- glVertex2i(27, 235);
- glVertex2i(39, 235);
- glVertex2i(39, 243);
- glVertex2i(27, 243);
- glEnd();
-
- glColor4f(0.9, 0.5, 0.9, 0.4);
- glPointSize(4.0);
- glBegin(GL_QUADS);
- glVertex2i(05, 150);
- glVertex2i(65, 150);
- glVertex2i(35, 235);
- glVertex2i(32, 235);
- glEnd();
-
- glColor3f((1.0f / 255) * 0, (1.0f / 255) * 250, (1.0f / 255) * 154);
- glPointSize(4.0);
 
  //-------------------- tree --------------------
  glBegin(GL_TRIANGLES);
- glColor3f((1.0f / 255) * 0, (1.0f / 255) * 128, (1.0f / 255) * 0);
+ glColor3f(0.0, 1.0, 0.0);
  glVertex2i(150, 220);
  glVertex2i(60, 220);
  glVertex2i(110, 290);
  glEnd();
  glBegin(GL_QUADS);
- glColor3f((1.0f / 255) * 165, (1.0f / 255) * 42, (1.0f / 255) * 42);
+ glColor3f(0.0, 0.0, 0.5);
  glVertex2i(100, 180);
  glVertex2i(100, 220);
  glVertex2i(110, 220);
@@ -137,7 +105,7 @@ void draw_object()
 
  //------------------------ round 2 ----------------------
  glBegin(GL_POLYGON);
- glColor3f((1.0f / 255) * 0, (1.0f / 255) * 128, (1.0f / 255) * 0);
+ glColor3f(0.0, 0.0, 0.5);
  glVertex2i(260, 280);
  glVertex2i(220, 320);
  glVertex2i(230, 335);
@@ -148,7 +116,7 @@ void draw_object()
  //---------------------------start tower 1 --------------
 
  glBegin(GL_QUADS);
- glColor3f((1.0f / 255) * 255, (1.0f / 255) * 228, (1.0f / 255) * 225);
+ glColor3f(0.0, 0.0, 0.5);
  glVertex2i(250, 390);
  glVertex2i(250, 400);
  glVertex2i(320, 400);
@@ -162,7 +130,7 @@ void draw_object()
  glVertex2i(320, 385);
  glEnd();
  glBegin(GL_QUADS);
- glColor3f((1.0f / 255) * 255, (1.0f / 255) * 228, (1.0f / 255) * 225);
+ glColor3f(0.4, 0.4, 0.4);
  glVertex2i(250, 380);
  glVertex2i(250, 390);
  glVertex2i(320, 390);
@@ -176,7 +144,7 @@ void draw_object()
  glVertex2i(320, 375);
  glEnd();
  glBegin(GL_QUADS);
- glColor3f((1.0f / 255) * 255, (1.0f / 255) * 228, (1.0f / 255) * 225);
+ glColor3f(0.4, 0.4, 0.4);
  glVertex2i(250, 370);
  glVertex2i(250, 380);
  glVertex2i(320, 380);
@@ -190,7 +158,7 @@ void draw_object()
  glVertex2i(320, 365);
  glEnd();
  glBegin(GL_QUADS);
- glColor3f((1.0f / 255) * 255, (1.0f / 255) * 228, (1.0f / 255) * 225);
+ glColor3f(0.4, 0.4, 0.4);
  glVertex2i(250, 360);
  glVertex2i(250, 370);
  glVertex2i(320, 370);
@@ -204,7 +172,7 @@ void draw_object()
  glVertex2i(320, 355);
  glEnd();
  glBegin(GL_QUADS);
- glColor3f((1.0f / 255) * 255, (1.0f / 255) * 228, (1.0f / 255) * 225);
+ glColor3f(0.4, 0.4, 0.4);
  glVertex2i(250, 350);
  glVertex2i(250, 360);
  glVertex2i(320, 360);
@@ -218,7 +186,7 @@ void draw_object()
  glVertex2i(320, 345);
  glEnd();
  glBegin(GL_QUADS);
- glColor3f((1.0f / 255) * 255, (1.0f / 255) * 228, (1.0f / 255) * 225);
+ glColor3f(0.4, 0.4, 0.4);
  glVertex2i(250, 340);
  glVertex2i(250, 350);
  glVertex2i(320, 350);
@@ -232,14 +200,14 @@ void draw_object()
  glVertex2i(320, 335);
  glEnd();
  glBegin(GL_QUADS);
- glColor3f((1.0f / 255) * 255, (1.0f / 255) * 228, (1.0f / 255) * 225);
+ glColor3f(0.0, 1.0, 1.0);
  glVertex2i(250, 330);
  glVertex2i(250, 340);
  glVertex2i(320, 340);
  glVertex2i(320, 330);
  glEnd();
  glBegin(GL_QUADS);
- glColor3f((1.0f / 255) * 178, (1.0f / 255) * 34, (1.0f / 255) * 34);
+ glColor3f(0.5, 0.0, 0.0);
  glVertex2i(270, 325);
  glVertex2i(270, 330);
  glVertex2i(300, 330);
@@ -251,21 +219,21 @@ void draw_object()
  //---------------------------start tower 2 --------------
 
  glBegin(GL_QUADS);
- glColor3f((1.0f / 255) * 255, (1.0f / 255) * 228, (1.0f / 255) * 225);
+ glColor3f(0.0, 0.5, 0.5);
  glVertex2i(260, 275);
  glVertex2i(260, 280);
  glVertex2i(375, 300);
  glVertex2i(375, 295);
  glEnd();
  glBegin(GL_QUADS);
- glColor3f((1.0f / 255) * 240, (1.0f / 255) * 255, (1.0f / 255) * 255);
+ glColor3f(0.0, 0.5, 0.5);
  glVertex2i(260, 270);
  glVertex2i(260, 275);
  glVertex2i(375, 295);
  glVertex2i(375, 290);
  glEnd();
  glBegin(GL_QUADS);
- glColor3f((1.0f / 255) * 255, (1.0f / 255) * 228, (1.0f / 255) * 225);
+ glColor3f(0.0, 0.5, 0.5);
  glVertex2i(260, 265);
  glVertex2i(260, 270);
  glVertex2i(375, 290);
@@ -279,21 +247,21 @@ void draw_object()
  glVertex2i(375, 280);
  glEnd();
  glBegin(GL_QUADS);
- glColor3f((1.0f / 255) * 255, (1.0f / 255) * 228, (1.0f / 255) * 225);
+ glColor3f(0.0, 0.5, 0.5);
  glVertex2i(260, 255);
  glVertex2i(260, 260);
  glVertex2i(375, 280);
  glVertex2i(375, 275);
  glEnd();
  glBegin(GL_QUADS);
- glColor3f((1.0f / 255) * 240, (1.0f / 255) * 255, (1.0f / 255) * 255);
+ glColor3f(0.0, 0.5, 0.5);
  glVertex2i(260, 250);
  glVertex2i(260, 255);
  glVertex2i(375, 275);
  glVertex2i(375, 270);
  glEnd();
  glBegin(GL_QUADS);
- glColor3f((1.0f / 255) * 255, (1.0f / 255) * 228, (1.0f / 255) * 225);
+ glColor3f(0.0, 0.5, 0.5);
  glVertex2i(260, 245);
  glVertex2i(260, 250);
  glVertex2i(375, 270);
@@ -307,21 +275,21 @@ void draw_object()
  glVertex2i(375, 260);
  glEnd();
  glBegin(GL_QUADS);
- glColor3f((1.0f / 255) * 255, (1.0f / 255) * 228, (1.0f / 255) * 225);
+ glColor3f(0.0, 0.5, 0.5);
  glVertex2i(260, 235);
  glVertex2i(260, 240);
  glVertex2i(375, 260);
  glVertex2i(375, 255);
  glEnd();
  glBegin(GL_QUADS);
- glColor3f((1.0f / 255) * 240, (1.0f / 255) * 255, (1.0f / 255) * 255);
+ glColor3f(0.0, 0.5, 0.5);
  glVertex2i(260, 230);
  glVertex2i(260, 235);
  glVertex2i(375, 255);
  glVertex2i(375, 250);
  glEnd();
  glBegin(GL_QUADS);
- glColor3f((1.0f / 255) * 255, (1.0f / 255) * 228, (1.0f / 255) * 225);
+ glColor3f(0.0, 0.5, 0.5);
  glVertex2i(260, 225);
  glVertex2i(260, 230);
  glVertex2i(375, 250);
@@ -335,7 +303,7 @@ void draw_object()
  glVertex2i(375, 240);
  glEnd();
  glBegin(GL_QUADS);
- glColor3f((1.0f / 255) * 255, (1.0f / 255) * 228, (1.0f / 255) * 225);
+ glColor3f(0.5, 0.0, 0.5);
  glVertex2i(260, 215);
  glVertex2i(260, 220);
  glVertex2i(375, 240);
@@ -359,7 +327,7 @@ void draw_object()
  glVertex2i(260, 270);
  glEnd();
  glBegin(GL_QUADS);
- glColor3f((1.0f / 255) * 255, (1.0f / 255) * 228, (1.0f / 255) * 225);
+ glColor3f(0.5f, 0.0f, 1.0f);
  glVertex2i(220, 305);
  glVertex2i(220, 310);
  glVertex2i(260, 270);
@@ -373,21 +341,21 @@ void draw_object()
  glVertex2i(260, 260);
  glEnd();
  glBegin(GL_QUADS);
- glColor3f((1.0f / 255) * 255, (1.0f / 255) * 228, (1.0f / 255) * 225);
+ glColor3f(0.5f, 0.0f, 1.0f);
  glVertex2i(220, 295);
  glVertex2i(220, 300);
  glVertex2i(260, 260);
  glVertex2i(260, 255);
  glEnd();
  glBegin(GL_QUADS);
- glColor3f((1.0f / 255) * 240, (1.0f / 255) * 255, (1.0f / 255) * 255);
+ glColor3f(0.5f, 0.0f, 1.0f);
  glVertex2i(220, 290);
  glVertex2i(220, 295);
  glVertex2i(260, 255);
  glVertex2i(260, 250);
  glEnd();
  glBegin(GL_QUADS);
- glColor3f((1.0f / 255) * 255, (1.0f / 255) * 228, (1.0f / 255) * 225);
+ glColor3f(0.5f, 0.0f, 1.0f);
  glVertex2i(220, 285);
  glVertex2i(220, 290);
  glVertex2i(260, 250);
@@ -401,21 +369,21 @@ void draw_object()
  glVertex2i(260, 240);
  glEnd();
  glBegin(GL_QUADS);
- glColor3f((1.0f / 255) * 255, (1.0f / 255) * 228, (1.0f / 255) * 225);
+ glColor3f(0.5f, 0.0f, 1.0f);
  glVertex2i(220, 275);
  glVertex2i(220, 280);
  glVertex2i(260, 240);
  glVertex2i(260, 235);
  glEnd();
  glBegin(GL_QUADS);
- glColor3f((1.0f / 255) * 240, (1.0f / 255) * 255, (1.0f / 255) * 255);
+ glColor3f(0.5f, 0.0f, 1.0f);
  glVertex2i(220, 270);
  glVertex2i(220, 275);
  glVertex2i(260, 235);
  glVertex2i(260, 230);
  glEnd();
  glBegin(GL_QUADS);
- glColor3f((1.0f / 255) * 255, (1.0f / 255) * 228, (1.0f / 255) * 225);
+ glColor3f(0.5f, 0.0f, 1.0f);
  glVertex2i(220, 265);
  glVertex2i(220, 270);
  glVertex2i(260, 230);
@@ -429,7 +397,7 @@ void draw_object()
  glVertex2i(260, 220);
  glEnd();
  glBegin(GL_QUADS);
- glColor3f((1.0f / 255) * 255, (1.0f / 255) * 228, (1.0f / 255) * 225);
+ glColor3f(0.5, 0.0, 0.5);
  glVertex2i(220, 255);
  glVertex2i(220, 260);
  glVertex2i(260, 220);
@@ -438,71 +406,18 @@ void draw_object()
  //---------------------------end tower 3 --------------
  //---------------------------start tower 4 --------------
 
+
+
+
  glBegin(GL_QUADS);
- glColor3f((1.0f / 255) * 255, (1.0f / 255) * 228, (1.0f / 255) * 225);
- glVertex2i(440, 275);
- glVertex2i(440, 280);
- glVertex2i(550, 240);
- glVertex2i(550, 235);
- glEnd();
- glBegin(GL_QUADS);
- glColor3f((1.0f / 255) * 148, (1.0f / 255) * 244, (1.0f / 255) * 192);
- glVertex2i(440, 270);
- glVertex2i(440, 275);
- glVertex2i(550, 235);
- glVertex2i(550, 230);
- glEnd();
- glBegin(GL_QUADS);
- glColor3f((1.0f / 255) * 255, (1.0f / 255) * 228, (1.0f / 255) * 225);
- glVertex2i(440, 265);
- glVertex2i(440, 270);
- glVertex2i(550, 230);
- glVertex2i(550, 225);
- glEnd();
- glBegin(GL_QUADS);
- glColor3f((1.0f / 255) * 0, (1.0f / 255) * 250, (1.0f / 255) * 154);
- glVertex2i(440, 260);
- glVertex2i(440, 265);
- glVertex2i(550, 225);
- glVertex2i(550, 220);
- glEnd();
- glBegin(GL_QUADS);
- glColor3f((1.0f / 255) * 255, (1.0f / 255) * 228, (1.0f / 255) * 225);
- glVertex2i(430, 255);
- glVertex2i(430, 265);
- glVertex2i(550, 220);
- glVertex2i(550, 215);
- glEnd();
- glBegin(GL_QUADS);
- glColor3f((1.0f / 255) * 148, (1.0f / 255) * 244, (1.0f / 255) * 192);
- glVertex2i(430, 250);
- glVertex2i(430, 260);
- glVertex2i(550, 215);
- glVertex2i(550, 210);
- glEnd();
- glBegin(GL_QUADS);
- glColor3f((1.0f / 255) * 255, (1.0f / 255) * 228, (1.0f / 255) * 225);
- glVertex2i(430, 245);
- glVertex2i(430, 255);
- glVertex2i(550, 210);
- glVertex2i(550, 205);
- glEnd();
- glBegin(GL_QUADS);
- glColor3f((1.0f / 255) * 0, (1.0f / 255) * 250, (1.0f / 255) * 154);
- glVertex2i(430, 240);
- glVertex2i(430, 250);
- glVertex2i(550, 205);
- glVertex2i(550, 200);
- glEnd();
- glBegin(GL_QUADS);
- glColor3f((1.0f / 255) * 255, (1.0f / 255) * 228, (1.0f / 255) * 225);
+ glColor3f(0.0, 1.0, 0.0);
  glVertex2i(420, 245);
  glVertex2i(420, 250);
  glVertex2i(550, 200);
  glVertex2i(550, 195);
  glEnd();
  glBegin(GL_QUADS);
- glColor3f((1.0f / 255) * 148, (1.0f / 255) * 244, (1.0f / 255) * 192);
+ glColor3f(0.0, 1.0, 0.0);
  glVertex2i(420, 240);
  glVertex2i(420, 245);
  glVertex2i(550, 195);
@@ -515,156 +430,10 @@ void draw_object()
  glVertex2i(550, 190);
  glVertex2i(550, 185);
  glEnd();
- glBegin(GL_QUADS);
- glColor3f((1.0f / 255) * 0, (1.0f / 255) * 250, (1.0f / 255) * 154);
- glVertex2i(420, 230);
- glVertex2i(420, 235);
- glVertex2i(550, 185);
- glVertex2i(550, 180);
- glEnd();
- glBegin(GL_QUADS);
- glColor3f((1.0f / 255) * 255, (1.0f / 255) * 228, (1.0f / 255) * 225);
- glVertex2i(420, 225);
- glVertex2i(420, 230);
- glVertex2i(550, 180);
- glVertex2i(550, 175);
- glEnd();
- //---------------------------------end of towr 4 ---------------
- glColor3f((1.0f / 255) * 103, (1.0f / 255) * 217, (1.0f / 255) * 41);
- glBegin(GL_QUADS);
- glVertex2i(440, 280);
- glVertex2i(450, 300);
- glVertex2i(550, 265);
- glVertex2i(550, 239);
- glEnd();
- //---------------------------------end of towr 4  roof ---------------
- //---------------------------------- start poligon 1 ---------------
- glBegin(GL_TRIANGLES);
- glColor3f((1.0f / 255) * 255, (1.0f / 255) * 228, (1.0f / 255) * 225);
- glVertex2i(80, 180);
- glVertex2i(70, 150);
- glVertex2i(80, 150);
- glEnd();
- glBegin(GL_QUADS);
- glColor3f((1.0f / 255) * 255, (1.0f / 255) * 228, (1.0f / 255) * 225);
- glVertex2i(80, 150);
- glVertex2i(80, 180);
- glVertex2i(100, 200);
- glVertex2i(100, 150);
- glBegin(GL_QUADS);
- glColor3f((1.0f / 255) * 255, (1.0f / 255) * 228, (1.0f / 255) * 225);
- glVertex2i(100, 150);
- glVertex2i(100, 200);
- glVertex2i(120, 210);
- glVertex2i(120, 150);
- glEnd();
- glBegin(GL_QUADS);
- glColor3f((1.0f / 255) * 255, (1.0f / 255) * 228, (1.0f / 255) * 225);
- glVertex2i(120, 150);
- glVertex2i(120, 210);
- glVertex2i(140, 220);
- glVertex2i(140, 150);
- glEnd();
- glBegin(GL_QUADS);
- glColor3f((1.0f / 255) * 255, (1.0f / 255) * 228, (1.0f / 255) * 225);
- glVertex2i(140, 150);
- glVertex2i(140, 220);
- glVertex2i(160, 220);
- glVertex2i(160, 150);
- glEnd();
- glBegin(GL_QUADS);
- glColor3f((1.0f / 255) * 255, (1.0f / 255) * 228, (1.0f / 255) * 225);
- glVertex2i(160, 150);
- glVertex2i(160, 220);
- glVertex2i(180, 210);
- glVertex2i(180, 150);
- glEnd();
- glBegin(GL_QUADS);
- glColor3f((1.0f / 255) * 255, (1.0f / 255) * 228, (1.0f / 255) * 225);
- glVertex2i(180, 150);
- glVertex2i(180, 210);
- glVertex2i(200, 200);
- glVertex2i(200, 150);
- glEnd();
- glBegin(GL_QUADS);
- glColor3f((1.0f / 255) * 255, (1.0f / 255) * 228, (1.0f / 255) * 225);
- glVertex2i(200, 150);
- glVertex2i(200, 200);
- glVertex2i(220, 180);
- glVertex2i(220, 150);
- glEnd();
- glBegin(GL_TRIANGLES);
- glColor3f((1.0f / 255) * 255, (1.0f / 255) * 228, (1.0f / 255) * 225);
- glVertex2i(220, 180);
- glVertex2i(230, 150);
- glVertex2i(220, 150);
- glEnd();
- //----------------------- end poligon 1-------------
- //--------------- start poligon 2 ---------------------
- glBegin(GL_TRIANGLES);
- glColor3f((1.0f / 255) * 255, (1.0f / 255) * 228, (1.0f / 255) * 225);
- glVertex2i(270, 170);
- glVertex2i(260, 150);
- glVertex2i(270, 150);
- glEnd();
- glBegin(GL_QUADS);
- glColor3f((1.0f / 255) * 255, (1.0f / 255) * 228, (1.0f / 255) * 225);
- glVertex2i(270, 150);
- glVertex2i(270, 170);
- glVertex2i(280, 190);
- glVertex2i(280, 150);
- glBegin(GL_QUADS);
- glColor3f((1.0f / 255) * 255, (1.0f / 255) * 228, (1.0f / 255) * 225);
- glVertex2i(280, 150);
- glVertex2i(280, 190);
- glVertex2i(290, 200);
- glVertex2i(290, 150);
- glEnd();
- glBegin(GL_QUADS);
- glColor3f((1.0f / 255) * 255, (1.0f / 255) * 228, (1.0f / 255) * 225);
- glVertex2i(290, 150);
- glVertex2i(290, 200);
- glVertex2i(300, 210);
- glVertex2i(300, 150);
- glEnd();
- glBegin(GL_QUADS);
- glColor3f((1.0f / 255) * 255, (1.0f / 255) * 228, (1.0f / 255) * 225);
- glVertex2i(300, 150);
- glVertex2i(300, 210);
- glVertex2i(310, 210);
- glVertex2i(310, 150);
- glEnd();
- glBegin(GL_QUADS);
- glColor3f((1.0f / 255) * 255, (1.0f / 255) * 228, (1.0f / 255) * 225);
- glVertex2i(310, 150);
- glVertex2i(310, 210);
- glVertex2i(320, 200);
- glVertex2i(320, 150);
- glEnd();
- glBegin(GL_QUADS);
- glColor3f((1.0f / 255) * 255, (1.0f / 255) * 228, (1.0f / 255) * 225);
- glVertex2i(320, 150);
- glVertex2i(320, 200);
- glVertex2i(330, 190);
- glVertex2i(330, 150);
- glEnd();
- glBegin(GL_QUADS);
- glColor3f((1.0f / 255) * 255, (1.0f / 255) * 228, (1.0f / 255) * 225);
- glVertex2i(330, 150);
- glVertex2i(330, 190);
- glVertex2i(340, 170);
- glVertex2i(340, 150);
- glEnd();
- glBegin(GL_TRIANGLES);
- glColor3f((1.0f / 255) * 255, (1.0f / 255) * 228, (1.0f / 255) * 225);
- glVertex2i(340, 170);
- glVertex2i(350, 150);
- glVertex2i(340, 150);
- glEnd();
- //---------------------- end of poligon 2 ---------
+
 
  glBegin(GL_QUADS);
- glColor3f((1.0f / 255) * 255, (1.0f / 255) * 255, (1.0f / 255) * 240);
+ glColor3f(0.0, 1.0, 0.0);
  glVertex2i(375, 255);
  glVertex2i(375, 265);
  glVertex2i(420, 250);
@@ -835,7 +604,7 @@ void draw_object()
 
  // car up 2nd roof
 
- glColor3f(1.0, 0.0, 0.0);
+ glColor3f(0.0, 0.0, 1.0);
  glPointSize(4.0);
  glBegin(GL_QUADS);
  glVertex2i(565 + i, 140);
@@ -1051,7 +820,6 @@ void keyboardFunc(unsigned char key, int x, int y)
  case 'S':
  case 's':
   i = 0.0;
-  //j=0.0;
 
   c = 1;
   break;
@@ -1109,13 +877,11 @@ int main(int argc, char** argv)
  glutInitDisplayMode(GLUT_SINGLE | GLUT_RGB);
  glutInitWindowSize(1180, 780);
  glutInitWindowPosition(0, 0);
- glutCreateWindow("City");
+ glutCreateWindow("Create City");
  glutDisplayFunc(display);
  glutIdleFunc(idle);
  glutKeyboardFunc(keyboardFunc);
-
  myinit();
-
  glutMainLoop();
  return 0;
 }
