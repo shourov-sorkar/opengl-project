@@ -2,20 +2,18 @@
 #include<stdio.h>
 #include <GL/glut.h>
 
-float i = 0.0;    //movement of car
-float m = 0.0;    //movement of students
+float i = 0.0;
+float m = 0.0;
 
 int c = 1;
 int w = 0;
 
 void draw_pixel(GLint cx, GLint cy)
 {
-
  glBegin(GL_POINTS);
  glVertex2i(cx, cy);
  glEnd();
 }
-
 void drawTringle(int x, int y, int x1, int y1, int x2, int y2, float r, float g, float b) {
  glBegin(GL_TRIANGLES);
  glColor3f(r, g, b);
@@ -33,7 +31,6 @@ void drawBOX(int x, int x1, int y, int y1, float r, float g, float b) {
  glVertex2f(x1, y);
  glEnd();
 }
-
 void plotpixels(GLint h, GLint k, GLint x, GLint y)
 {
  draw_pixel(x + h, y + k);
@@ -45,7 +42,6 @@ void plotpixels(GLint h, GLint k, GLint x, GLint y)
  draw_pixel(y + h, -x + k);
  draw_pixel(-y + h, -x + k);
 }
-
 void draw_circle(GLint h, GLint k, GLint r)
 {
  GLint d = 1 - r, x = 0, y = r;
@@ -63,12 +59,10 @@ void draw_circle(GLint h, GLint k, GLint r)
  plotpixels(h, k, x, y);
 }
 
-
-
 void draw_object()
 {
  glClear(GL_COLOR_BUFFER_BIT);
- //sky
+
  glColor3f((1.0f / 255) * 30, (1.0f / 255) * 144, (1.0f / 255) * 255);
  glPointSize(4.0);
  glBegin(GL_QUADS);
@@ -77,7 +71,6 @@ void draw_object()
  glVertex2i(1180, 170);
  glVertex2i(1180, 620);
  glEnd();
- //------------ ground
  glColor3f(1.0f, 0.99f, 0.0f);
  glPointSize(4.0);
  glBegin(GL_QUADS);
@@ -87,7 +80,6 @@ void draw_object()
  glVertex2i(1180, 290);
  glEnd();
 
- //-------------------- tree --------------------
  glBegin(GL_TRIANGLES);
  glColor3f(0.0, 1.0, 0.0);
  glVertex2i(150, 220);
@@ -103,7 +95,6 @@ void draw_object()
 
  glEnd();
 
- //------------------------ round 2 ----------------------
  glBegin(GL_POLYGON);
  glColor3f(0.0, 0.0, 0.5);
  glVertex2i(260, 280);
@@ -113,7 +104,6 @@ void draw_object()
  glVertex2i(375, 300);
 
  glEnd();
- //---------------------------start tower 1 --------------
 
  glBegin(GL_QUADS);
  glColor3f(0.0, 0.0, 0.5);
@@ -213,11 +203,6 @@ void draw_object()
  glVertex2i(300, 330);
  glVertex2i(300, 325);
  glEnd();
- //---------------------------end tower 1 --------------
-
-
- //---------------------------start tower 2 --------------
-
  glBegin(GL_QUADS);
  glColor3f(0.0, 0.5, 0.5);
  glVertex2i(260, 275);
@@ -309,8 +294,6 @@ void draw_object()
  glVertex2i(375, 240);
  glVertex2i(375, 235);
  glEnd();
- //---------------------------end tower 2 --------------
- //---------------------------start tower 3 --------------
 
  glBegin(GL_QUADS);
  glColor3f(0.5f, 0.0f, 1.0f);
@@ -403,12 +386,6 @@ void draw_object()
  glVertex2i(260, 220);
  glVertex2i(260, 215);
  glEnd();
- //---------------------------end tower 3 --------------
- //---------------------------start tower 4 --------------
-
-
-
-
  glBegin(GL_QUADS);
  glColor3f(0.0, 1.0, 0.0);
  glVertex2i(420, 245);
@@ -431,7 +408,6 @@ void draw_object()
  glVertex2i(550, 185);
  glEnd();
 
-
  glBegin(GL_QUADS);
  glColor3f(0.0, 1.0, 0.0);
  glVertex2i(375, 255);
@@ -446,7 +422,6 @@ void draw_object()
  glVertex2i(420, 245);
  glVertex2i(420, 235);
  glEnd();
- //----------
  glBegin(GL_QUADS);
  glColor3f((1.0f / 255) * 255, (1.0f / 255) * 255, (1.0f / 255) * 240);
  glVertex2i(155, 200);
@@ -461,7 +436,6 @@ void draw_object()
  glVertex2i(220, 260);
  glVertex2i(220, 250);
  glEnd();
- //---------------
  glBegin(GL_QUADS);
  glColor3f((1.0f / 255) * 255, (1.0f / 255) * 255, (1.0f / 255) * 240);
  glVertex2i(285, 150);
@@ -469,9 +443,6 @@ void draw_object()
  glVertex2i(300, 275);
  glVertex2i(300, 245);
  glEnd();
- //--------------------------------- flyover end-----------------------
-
- //student
  glColor3ub(0, 0, 0);
  glBegin(GL_POLYGON);
  glVertex2f(370 - i, 160);
@@ -484,9 +455,7 @@ void draw_object()
  {
   glColor3ub(153, 102, 0);
   draw_circle(378 - i, 160, l);
-  //draw_circle(420, 330, l);
  }
- // student
  glColor3ub(0, 0, 0);
  glBegin(GL_POLYGON);
  glVertex2f(490 - i, 160);
@@ -499,13 +468,7 @@ void draw_object()
  {
   glColor3ub(153, 102, 0);
   draw_circle(495 - i, 160, l);
-  //draw_circle(420, 330, l);
  }
- //-------------------------------- road
-
- //glPushMatrix();
-
-
  glColor3f(0.1, 0.1, 0.1);
  glPointSize(4.0);
  glBegin(GL_QUADS);
@@ -514,8 +477,6 @@ void draw_object()
  glVertex2i(650, 130);
  glVertex2i(0, 130);
  glEnd();
-
-
 
  glColor3f(1.0, 1.0, 1.0);
  glPointSize(4.0);
@@ -526,8 +487,6 @@ void draw_object()
  glVertex2i(50, 106);
  glEnd();
 
-
-
  glColor3f(1.0, 1.0, 1.0);
  glPointSize(4.0);
  glBegin(GL_QUADS);
@@ -536,9 +495,6 @@ void draw_object()
  glVertex2i(200, 106);
  glVertex2i(150, 106);
  glEnd();
-
-
-
 
  glColor3f(1.0, 1.0, 1.0);
  glPointSize(4.0);
@@ -549,8 +505,6 @@ void draw_object()
  glVertex2i(250, 106);
  glEnd();
 
-
-
  glColor3f(1.0, 1.0, 1.0);
  glPointSize(4.0);
  glBegin(GL_QUADS);
@@ -559,8 +513,6 @@ void draw_object()
  glVertex2i(400, 106);
  glVertex2i(350, 106);
  glEnd();
-
-
 
  glColor3f(1.0, 1.0, 1.0);
  glPointSize(4.0);
@@ -571,8 +523,6 @@ void draw_object()
  glVertex2i(450, 106);
  glEnd();
 
-
-
  glColor3f(1.0, 1.0, 1.0);
  glPointSize(4.0);
  glBegin(GL_QUADS);
@@ -581,16 +531,6 @@ void draw_object()
  glVertex2i(600, 106);
  glVertex2i(550, 106);
  glEnd();
-
- //---------------------------------
-
-
-
-
-
- //gari...up..2nd..body
-
-
 
  glColor3f(0.0, 0.0, 0.3);
  glPointSize(4.0);
@@ -601,9 +541,6 @@ void draw_object()
  glVertex2i(550 + i, 140);
  glEnd();
 
-
- // car up 2nd roof
-
  glColor3f(0.0, 0.0, 1.0);
  glPointSize(4.0);
  glBegin(GL_QUADS);
@@ -612,8 +549,6 @@ void draw_object()
  glVertex2i(615 + i, 155);
  glVertex2i(575 + i, 155);
  glEnd();
-
- //glass
 
  glColor3f(0.0, 0.0, 0.0);
  glPointSize(4.0);
@@ -633,7 +568,6 @@ void draw_object()
  glVertex2i(597 + i, 155);
  glEnd();
 
- //chaka..1
  glColor3f(0.0, 0.0, 0.0);
  glPointSize(4.0);
  glBegin(GL_QUADS);
@@ -643,7 +577,6 @@ void draw_object()
  glVertex2i(570 + i, 115);
  glEnd();
 
- //chaka..2
  glColor3f(0.0, 0.0, 0.0);
  glPointSize(4.0);
  glBegin(GL_QUADS);
@@ -653,8 +586,6 @@ void draw_object()
  glVertex2i(610 + i, 115);
  glEnd();
 
- //gari...up..1st..body
-
  glColor3f(0.0, 0.0, 0.3);
  glPointSize(4.0);
  glBegin(GL_QUADS);
@@ -663,9 +594,6 @@ void draw_object()
  glVertex2i(180 + i, 140);
  glVertex2i(95 + i, 140);
  glEnd();
-
- //car up 1st roof
-
  glColor3f(1.0, 0.0, 0.0);
  glPointSize(4.0);
  glBegin(GL_QUADS);
@@ -674,10 +602,6 @@ void draw_object()
  glVertex2i(160 + i, 155);
  glVertex2i(120 + i, 155);
  glEnd();
-
- //glass
-
-
  glColor3f(0.0, 0.0, 0.0);
  glPointSize(4.0);
  glBegin(GL_QUADS);
